@@ -95,17 +95,44 @@ export function TerminalContent({
           {/* Static Welcome Message */}
           <div className="text-center">
             <p className="text-green-400 mb-3">Welcome to my interactive terminal portfolio!</p>
-            <p className="text-white text-sm mb-2">Available commands:</p>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs terminal-muted">
-              <div>• <span className="text-green-400">about</span> - Learn about me</div>
-              <div>• <span className="text-green-400">social</span> - Connect with me</div>
-              <div>• <span className="text-green-400">education</span> - Educational background</div>
-              <div>• <span className="text-green-400">connect</span> - Quick social links</div>
-              <div>• <span className="text-green-400">projects</span> - Explore my projects</div>
-              <div>• <span className="text-green-400">help</span> - Show help menu</div>
-              <div>• <span className="text-green-400">experience</span> - Work experience</div>
-              <div>• <span className="text-green-400">clear</span> - Clear terminal</div>
-              <div>• <span className="text-green-400">certifications</span> - View certifications</div>
+            <p className="text-white text-sm mb-4">Available Commands:</p>
+            <div className="text-left text-xs terminal-muted space-y-1 max-w-sm mx-auto">
+              <div className="flex">
+                <span className="text-green-400 w-20">• about</span>
+                <span className="text-gray-400">- Learn about me</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• education</span>
+                <span className="text-gray-400">- Educational background</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• projects</span>
+                <span className="text-gray-400">- Explore my projects</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• experience</span>
+                <span className="text-gray-400">- Work experience</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• certifications</span>
+                <span className="text-gray-400 ml-1">- View certifications</span>
+              </div>
+              <div className="flex mt-2">
+                <span className="text-green-400 w-20">• social</span>
+                <span className="text-gray-400">- Connect with me</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• connect</span>
+                <span className="text-gray-400">- Quick social links</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• help</span>
+                <span className="text-gray-400">- Show help menu</span>
+              </div>
+              <div className="flex">
+                <span className="text-green-400 w-20">• clear</span>
+                <span className="text-gray-400">- Clear terminal</span>
+              </div>
             </div>
             <p className="text-yellow-400 mt-4 text-sm">Type a command and press Enter to get started!</p>
             <p className="text-blue-400 mt-2 text-sm">Try "connect" for quick access to all my social links!</p>
