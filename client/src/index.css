@@ -127,3 +127,24 @@
   background: var(--terminal-green);
   border-radius: 4px;
 }
+
+/* Python Logo Animation */
+.python-logo-animation {
+  animation: pythonFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 212, 59, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.python-logo-animation:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 30px rgba(255, 212, 59, 0.5));
+}
+
+@keyframes pythonFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

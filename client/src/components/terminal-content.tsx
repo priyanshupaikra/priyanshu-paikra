@@ -12,45 +12,87 @@ export function TerminalContent({ history, terminalRef }: TerminalContentProps) 
       ref={terminalRef}
       className="flex-1 p-4 overflow-y-auto terminal-scroll"
     >
-      {/* Welcome ASCII Art */}
-      <pre className="text-green-400 text-xs sm:text-sm mb-6 whitespace-pre-wrap">
-        {asciiArt}
-      </pre>
-
-      {/* Initial Help Text */}
-      <div className="mb-4">
-        <p className="text-green-400">Welcome to my interactive terminal portfolio!</p>
-        <p className="text-white mt-2">Available commands:</p>
-        <ul className="terminal-muted mt-1 space-y-1">
-          <li>• <span className="text-green-400">about</span> - Learn about me</li>
-          <li>• <span className="text-green-400">education</span> - View my educational background</li>
-          <li>• <span className="text-green-400">projects</span> - Explore my projects</li>
-          <li>• <span className="text-green-400">experience</span> - Check my work experience</li>
-          <li>• <span className="text-green-400">certifications</span> - View my certifications</li>
-          <li>• <span className="text-green-400">social</span> - Connect with me</li>
-          <li>• <span className="text-green-400">connect</span> - Quick social connections</li>
-          <li>• <span className="text-green-400">help</span> - Show this help menu</li>
-          <li>• <span className="text-green-400">clear</span> - Clear the terminal</li>
-        </ul>
-        <p className="text-yellow-400 mt-3">Type a command and press Enter to get started!</p>
-        <p className="text-blue-400 mt-2">💡 Try "connect" for quick access to all my social links!</p>
-      </div>
-
-      {/* Command History Display */}
-      <div>
-        {history.map((entry, index) => (
-          <div key={`${entry.timestamp}-${index}`}>
-            {entry.type === 'command' && (
-              <div className="text-green-400">{entry.content}</div>
-            )}
-            {entry.type === 'output' && (
-              <div dangerouslySetInnerHTML={{ __html: entry.content }} />
-            )}
-            {entry.type === 'error' && (
-              <div className="text-red-400">Command not found: {entry.content.replace('Command not found: ', '')}</div>
-            )}
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Left Side - Python Logo and Welcome */}
+        <div className="lg:w-2/5 flex flex-col items-center justify-start">
+          {/* Python Logo Animation */}
+          <div className="mb-6 flex items-center justify-center">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 256 255"
+              className="python-logo-animation"
+            >
+              <defs>
+                <linearGradient id="pyYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#ffd43b" />
+                  <stop offset="100%" stopColor="#ffe873" />
+                </linearGradient>
+                <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#306998" />
+                  <stop offset="100%" stopColor="#4b8bbe" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z"
+                fill="url(#pyBlue)"
+              />
+              <path
+                d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z"
+                fill="url(#pyYellow)"
+              />
+            </svg>
           </div>
-        ))}
+
+          {/* Welcome ASCII Art */}
+          <pre className="text-green-400 text-xs sm:text-sm mb-4 whitespace-pre-wrap text-center">
+            {asciiArt}
+          </pre>
+        </div>
+
+        {/* Right Side - Commands and History */}
+        <div className="lg:w-3/5">
+          {/* Initial Help Text */}
+          <div className="mb-4">
+            <p className="text-green-400 text-lg font-bold mb-3">Welcome to my interactive terminal portfolio!</p>
+            <p className="text-white mt-2">Available commands:</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-2">
+              <div className="terminal-muted space-y-1">
+                <div>• <span className="text-green-400">about</span> - Learn about me</div>
+                <div>• <span className="text-green-400">education</span> - Educational background</div>
+                <div>• <span className="text-green-400">projects</span> - Explore my projects</div>
+                <div>• <span className="text-green-400">experience</span> - Work experience</div>
+                <div>• <span className="text-green-400">certifications</span> - View certifications</div>
+              </div>
+              <div className="terminal-muted space-y-1">
+                <div>• <span className="text-green-400">social</span> - Connect with me</div>
+                <div>• <span className="text-green-400">connect</span> - Quick social links</div>
+                <div>• <span className="text-green-400">help</span> - Show help menu</div>
+                <div>• <span className="text-green-400">clear</span> - Clear terminal</div>
+              </div>
+            </div>
+            <p className="text-yellow-400 mt-4">Type a command and press Enter to get started!</p>
+            <p className="text-blue-400 mt-2">Try "connect" for quick access to all my social links!</p>
+            <p className="text-purple-400 mt-1 text-sm">Use ↑/↓ arrows for command history, Tab for completion</p>
+          </div>
+
+          {/* Command History Display */}
+          <div>
+            {history.map((entry, index) => (
+              <div key={`${entry.timestamp}-${index}`}>
+                {entry.type === 'command' && (
+                  <div className="text-green-400">{entry.content}</div>
+                )}
+                {entry.type === 'output' && (
+                  <div dangerouslySetInnerHTML={{ __html: entry.content }} />
+                )}
+                {entry.type === 'error' && (
+                  <div className="text-red-400">Command not found: {entry.content.replace('Command not found: ', '')}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
