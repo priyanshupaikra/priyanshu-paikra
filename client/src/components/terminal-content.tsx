@@ -98,39 +98,39 @@ export function TerminalContent({
             <p className="text-white text-sm mb-4">Available Commands:</p>
             <div className="text-left text-xs terminal-muted space-y-1 max-w-sm mx-auto">
               <div className="flex">
-                <span className="text-green-400 w-20">• about</span>
+                <span className="text-green-400 w-28">• about</span>
                 <span className="text-gray-400">- Learn about me</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• education</span>
+                <span className="text-green-400 w-28">• education</span>
                 <span className="text-gray-400">- Educational background</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• projects</span>
+                <span className="text-green-400 w-28">• projects</span>
                 <span className="text-gray-400">- Explore my projects</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• experience</span>
+                <span className="text-green-400 w-28">• experience</span>
                 <span className="text-gray-400">- Work experience</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• certifications</span>
-                <span className="text-gray-400 ml-1">- View certifications</span>
+                <span className="text-green-400 w-28">• certifications</span>
+                <span className="text-gray-400">- View certifications</span>
               </div>
               <div className="flex mt-2">
-                <span className="text-green-400 w-20">• social</span>
+                <span className="text-green-400 w-28">• social</span>
                 <span className="text-gray-400">- Connect with me</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• connect</span>
+                <span className="text-green-400 w-28">• connect</span>
                 <span className="text-gray-400">- Quick social links</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• help</span>
+                <span className="text-green-400 w-28">• help</span>
                 <span className="text-gray-400">- Show help menu</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-20">• clear</span>
+                <span className="text-green-400 w-28">• clear</span>
                 <span className="text-gray-400">- Clear terminal</span>
               </div>
             </div>
