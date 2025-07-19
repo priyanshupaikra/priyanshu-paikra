@@ -48,7 +48,7 @@ export function CommandInput({
   return (
     <div className="terminal-gray border-t border-green-400 p-4">
       <div className="flex items-center">
-        <span className="text-green-400 mr-2">user@portfolio:~$</span>
+        <span className="text-green-400 mr-2">user@priyanshu:~$</span>
         <input 
           ref={inputRef}
           type="text" 

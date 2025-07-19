@@ -30,7 +30,7 @@ export function useTerminal() {
     // Add command to display history
     addToHistory({
       type: 'command',
-      content: `user@portfolio:~$ ${command}`
+      content: `user@priyanshu:~$ ${command}`
     });
 
     // Add to command history for navigation
