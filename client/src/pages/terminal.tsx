@@ -16,16 +16,16 @@ export default function Terminal() {
   return (
     <div className="min-h-screen flex flex-col terminal-bg">
       <TerminalHeader />
-      <TerminalContent 
-        history={history}
-        terminalRef={terminalRef}
-      />
-      <CommandInput
-        currentCommand={currentCommand}
-        onCommandChange={handleCommandChange}
-        onKeyDown={handleKeyDown}
-        onExecuteCommand={executeCommand}
-      />
+      <div className="flex-1 flex flex-col lg:flex-row">
+        <TerminalContent 
+          history={history}
+          terminalRef={terminalRef}
+          currentCommand={currentCommand}
+          onCommandChange={handleCommandChange}
+          onKeyDown={handleKeyDown}
+          onExecuteCommand={executeCommand}
+        />
+      </div>
     </div>
   );
 }

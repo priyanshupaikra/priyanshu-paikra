@@ -1,25 +1,68 @@
 import { asciiArt } from '@/data/portfolio-data';
 import type { HistoryEntry } from '@/hooks/use-terminal';
+import { useEffect, useRef } from 'react';
 
 interface TerminalContentProps {
   history: HistoryEntry[];
   terminalRef: React.RefObject<HTMLDivElement>;
+  currentCommand: string;
+  onCommandChange: (value: string) => void;
+  onKeyDown: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  onExecuteCommand: (command: string) => void;
 }
 
-export function TerminalContent({ history, terminalRef }: TerminalContentProps) {
+export function TerminalContent({ 
+  history, 
+  terminalRef, 
+  currentCommand, 
+  onCommandChange, 
+  onKeyDown, 
+  onExecuteCommand 
+}: TerminalContentProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleClick = () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    };
+
+    const handleFocus = () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+    window.addEventListener('focus', handleFocus);
+    
+    return () => {
+      document.removeEventListener('click', handleClick);
+      window.removeEventListener('focus', handleFocus);
+    };
+  }, []);
+
+  const quickCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'connect', 'help', 'clear'];
   return (
     <div 
       ref={terminalRef}
       className="flex-1 p-4 overflow-y-auto terminal-scroll"
     >
-      <div className="flex flex-col lg:flex-row gap-6">
-        {/* Left Side - Python Logo and Welcome */}
-        <div className="lg:w-2/5 flex flex-col items-center justify-start">
+      <div className="flex flex-col lg:flex-row h-full">
+        {/* Left Side - Python Logo and ASCII Art (Fixed) */}
+        <div className="lg:w-2/5 lg:border-r border-green-400 lg:pr-6 flex flex-col items-center justify-start lg:h-full">
           {/* Python Logo Animation */}
-          <div className="mb-6 flex items-center justify-center">
+          <div className="mb-8 flex items-center justify-center mt-8">
             <svg
-              width="120"
-              height="120"
+              width="100"
+              height="100"
               viewBox="0 0 256 255"
               className="python-logo-animation"
             >
@@ -45,39 +88,35 @@ export function TerminalContent({ history, terminalRef }: TerminalContentProps) 
           </div>
 
           {/* Welcome ASCII Art */}
-          <pre className="text-green-400 text-xs sm:text-sm mb-4 whitespace-pre-wrap text-center">
+          <pre className="text-green-400 text-xs leading-tight mb-6 whitespace-pre-wrap text-center">
             {asciiArt}
           </pre>
+
+          {/* Static Welcome Message */}
+          <div className="text-center">
+            <p className="text-green-400 mb-3">Welcome to my interactive terminal portfolio!</p>
+            <p className="text-white text-sm mb-2">Available commands:</p>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs terminal-muted">
+              <div>• <span className="text-green-400">about</span> - Learn about me</div>
+              <div>• <span className="text-green-400">social</span> - Connect with me</div>
+              <div>• <span className="text-green-400">education</span> - Educational background</div>
+              <div>• <span className="text-green-400">connect</span> - Quick social links</div>
+              <div>• <span className="text-green-400">projects</span> - Explore my projects</div>
+              <div>• <span className="text-green-400">help</span> - Show help menu</div>
+              <div>• <span className="text-green-400">experience</span> - Work experience</div>
+              <div>• <span className="text-green-400">clear</span> - Clear terminal</div>
+              <div>• <span className="text-green-400">certifications</span> - View certifications</div>
+            </div>
+            <p className="text-yellow-400 mt-4 text-sm">Type a command and press Enter to get started!</p>
+            <p className="text-blue-400 mt-2 text-sm">Try "connect" for quick access to all my social links!</p>
+            <p className="text-purple-400 mt-1 text-xs">Use ↑/↓ arrows for command history, Tab for completion</p>
+          </div>
         </div>
 
-        {/* Right Side - Commands and History */}
-        <div className="lg:w-3/5">
-          {/* Initial Help Text */}
-          <div className="mb-4">
-            <p className="text-green-400 text-lg font-bold mb-3">Welcome to my interactive terminal portfolio!</p>
-            <p className="text-white mt-2">Available commands:</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 mt-2">
-              <div className="terminal-muted space-y-1">
-                <div>• <span className="text-green-400">about</span> - Learn about me</div>
-                <div>• <span className="text-green-400">education</span> - Educational background</div>
-                <div>• <span className="text-green-400">projects</span> - Explore my projects</div>
-                <div>• <span className="text-green-400">experience</span> - Work experience</div>
-                <div>• <span className="text-green-400">certifications</span> - View certifications</div>
-              </div>
-              <div className="terminal-muted space-y-1">
-                <div>• <span className="text-green-400">social</span> - Connect with me</div>
-                <div>• <span className="text-green-400">connect</span> - Quick social links</div>
-                <div>• <span className="text-green-400">help</span> - Show help menu</div>
-                <div>• <span className="text-green-400">clear</span> - Clear terminal</div>
-              </div>
-            </div>
-            <p className="text-yellow-400 mt-4">Type a command and press Enter to get started!</p>
-            <p className="text-blue-400 mt-2">Try "connect" for quick access to all my social links!</p>
-            <p className="text-purple-400 mt-1 text-sm">Use ↑/↓ arrows for command history, Tab for completion</p>
-          </div>
-
-          {/* Command History Display */}
-          <div>
+        {/* Right Side - Terminal Interaction Only */}
+        <div className="lg:w-3/5 lg:pl-6 flex flex-col min-h-0">
+          {/* Command History Display - Only executed commands and outputs */}
+          <div className="flex-1 overflow-y-auto mb-4">
             {history.map((entry, index) => (
               <div key={`${entry.timestamp}-${index}`}>
                 {entry.type === 'command' && (
@@ -91,6 +130,39 @@ export function TerminalContent({ history, terminalRef }: TerminalContentProps) 
                 )}
               </div>
             ))}
+          </div>
+
+          {/* Command Input - Only on right side */}
+          <div className="border-t border-green-400 pt-4">
+            <div className="flex items-center">
+              <span className="text-green-400 mr-2">user@priyanshu:~$</span>
+              <input 
+                ref={inputRef}
+                type="text" 
+                value={currentCommand}
+                onChange={(e) => onCommandChange(e.target.value)}
+                onKeyDown={onKeyDown}
+                className="bg-transparent text-green-400 outline-none flex-1 font-mono"
+                autoComplete="off"
+              />
+              <span className="cursor ml-1">|</span>
+            </div>
+            
+            {/* Mobile Command Buttons */}
+            <div className="mt-3 sm:hidden">
+              <div className="text-xs terminal-muted mb-2">Quick Commands:</div>
+              <div className="flex flex-wrap gap-1.5">
+                {quickCommands.map((command) => (
+                  <button
+                    key={command}
+                    onClick={() => onExecuteCommand(command)}
+                    className="terminal-gray border border-green-400 px-2 py-1 text-xs rounded hover:bg-green-400 hover:text-black transition-colors min-w-0 flex-shrink-0"
+                  >
+                    {command}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
