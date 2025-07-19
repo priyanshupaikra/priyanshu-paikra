@@ -32,7 +32,7 @@ export function CommandInput({
     return () => document.removeEventListener('click', handleClick);
   }, []);
 
-  const quickCommands = ['about', 'projects', 'experience', 'social'];
+  const quickCommands = ['about', 'projects', 'experience', 'connect'];
 
   return (
     <div className="terminal-gray border-t border-green-400 p-4">

@@ -28,10 +28,12 @@ export function TerminalContent({ history, terminalRef }: TerminalContentProps) 
           <li>• <span className="text-green-400">experience</span> - Check my work experience</li>
           <li>• <span className="text-green-400">certifications</span> - View my certifications</li>
           <li>• <span className="text-green-400">social</span> - Connect with me</li>
+          <li>• <span className="text-green-400">connect</span> - Quick social connections</li>
           <li>• <span className="text-green-400">help</span> - Show this help menu</li>
           <li>• <span className="text-green-400">clear</span> - Clear the terminal</li>
         </ul>
         <p className="text-yellow-400 mt-3">Type a command and press Enter to get started!</p>
+        <p className="text-blue-400 mt-2">💡 Try "connect" for quick access to all my social links!</p>
       </div>
 
       {/* Command History Display */}

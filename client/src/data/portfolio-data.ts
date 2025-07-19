@@ -49,22 +49,22 @@ Core Skills:
 🚀 AI-Powered Task Manager
    ├── Tech: Python, Django, React, PostgreSQL
    ├── Features: Smart task prioritization using ML
-   └── GitHub: github.com/user/ai-task-manager
+   └── <a href="https://github.com/user/ai-task-manager" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/ai-task-manager</a>
 
 📊 Real-time Analytics Dashboard
    ├── Tech: Python, FastAPI, Redis, D3.js
    ├── Features: Live data visualization & monitoring
-   └── GitHub: github.com/user/analytics-dashboard
+   └── <a href="https://github.com/user/analytics-dashboard" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/analytics-dashboard</a>
 
 🤖 Slack Bot for Team Automation
    ├── Tech: Python, Slack API, AWS Lambda
    ├── Features: Automated workflows & notifications
-   └── GitHub: github.com/user/slack-automation-bot
+   └── <a href="https://github.com/user/slack-automation-bot" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/slack-automation-bot</a>
 
 🌐 E-commerce Platform
    ├── Tech: Django, React, Stripe API, Docker
    ├── Features: Full-featured online store with payments
-   └── GitHub: github.com/user/ecommerce-platform
+   └── <a href="https://github.com/user/ecommerce-platform" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/ecommerce-platform</a>
     `
   },
   experience: {
@@ -115,18 +115,50 @@ Core Skills:
     title: "CONNECT WITH ME",
     content: `
 🔗 Professional Links:
-   • GitHub: github.com/johndeveloper
-   • LinkedIn: linkedin.com/in/johndeveloper  
-   • Portfolio: johndeveloper.dev
-   • Email: john@johndeveloper.dev
+   • <a href="https://github.com/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/johndeveloper</a>
+   • <a href="https://linkedin.com/in/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">LinkedIn: linkedin.com/in/johndeveloper</a>
+   • <a href="https://johndeveloper.dev" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Portfolio: johndeveloper.dev</a>
+   • <a href="mailto:john@johndeveloper.dev" class="text-blue-400 hover:text-blue-300 underline">Email: john@johndeveloper.dev</a>
 
 🐦 Social Media:
-   • Twitter: @johndev_codes
-   • Dev.to: dev.to/johndeveloper
-   • Medium: medium.com/@johndeveloper
+   • <a href="https://twitter.com/johndev_codes" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Twitter: @johndev_codes</a>
+   • <a href="https://dev.to/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Dev.to: dev.to/johndeveloper</a>
+   • <a href="https://medium.com/@johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Medium: medium.com/@johndeveloper</a>
 
 💬 Let's connect and discuss Python, web development,
    or any interesting tech topics!
+    `
+  },
+  connect: {
+    title: "🌐 LET'S CONNECT!",
+    content: `
+┌─────────────────────────────────────────────────────────┐
+│                    SOCIAL CONNECTIONS                   │
+└─────────────────────────────────────────────────────────┘
+
+📧 <a href="mailto:john@johndeveloper.dev" class="text-green-400 hover:text-green-300 underline font-bold">john@johndeveloper.dev</a>
+   → Email me for collaborations and opportunities
+
+🐙 <a href="https://github.com/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">GitHub</a>
+   → Check out my code and contributions
+
+💼 <a href="https://linkedin.com/in/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">LinkedIn</a>
+   → Connect professionally and see my experience
+
+🐦 <a href="https://twitter.com/johndev_codes" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Twitter</a>
+   → Follow for tech updates and coding insights
+
+📝 <a href="https://dev.to/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Dev.to</a>
+   → Read my technical articles and tutorials
+
+✍️ <a href="https://medium.com/@johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Medium</a>
+   → Deep dives into development topics
+
+🌐 <a href="https://johndeveloper.dev" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Portfolio Website</a>
+   → View my complete portfolio and projects
+
+💬 Always open to discussing Python, web development,
+   AI/ML, and exciting tech opportunities!
     `
   },
   help: {
@@ -140,6 +172,7 @@ projects      - Featured projects and GitHub repositories
 experience    - Professional work history
 certifications- Industry certifications and credentials
 social        - Social media links and contact information
+connect       - Quick access to all social connections
 help          - Display this help menu
 clear         - Clear the terminal screen
 
@@ -162,4 +195,4 @@ export const asciiArt = `
     =====================================
 `;
 
-export const availableCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'help', 'clear'];
+export const availableCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'connect', 'help', 'clear'];
