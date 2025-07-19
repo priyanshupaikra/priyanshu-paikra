@@ -141,11 +141,18 @@ export function TerminalContent({
         </div>
 
         {/* Right Side - Terminal Interaction Only */}
-        <div className="lg:w-3/5 lg:pl-6 flex flex-col min-h-0">
+        <div className="lg:w-3/5 lg:pl-6 flex flex-col min-h-0 terminal-right-side">
           {/* Command History Display - Only executed commands and outputs */}
-          <div className="flex-1 overflow-y-auto mb-4">
+          <div className="flex-1 overflow-y-auto mb-4" ref={terminalRef}>
+            {history.length === 0 && (
+              <div className="text-center py-8">
+                <p className="text-green-400 mb-2">Terminal Ready</p>
+                <p className="text-gray-400 text-sm">Type a command and press Enter to start...</p>
+                <p className="text-purple-400 text-xs mt-2">↑/↓ arrows for history, Tab for completion</p>
+              </div>
+            )}
             {history.map((entry, index) => (
-              <div key={`${entry.timestamp}-${index}`}>
+              <div key={`${entry.timestamp}-${index}`} className="mb-1">
                 {entry.type === 'command' && (
                   <div className="text-green-400">{entry.content}</div>
                 )}

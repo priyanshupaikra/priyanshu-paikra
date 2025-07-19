@@ -22,8 +22,11 @@ export function CommandInput({
   }, []);
 
   useEffect(() => {
-    const handleClick = () => {
-      if (inputRef.current) {
+    const handleClick = (e: MouseEvent) => {
+      // Only focus if click is within the right terminal area
+      const target = e.target as HTMLElement;
+      const rightSide = target.closest('.terminal-right-side');
+      if (rightSide && inputRef.current) {
         inputRef.current.focus();
       }
     };
