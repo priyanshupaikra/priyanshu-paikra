@@ -34,8 +34,14 @@ export function useTerminal() {
     });
 
     // Add to command history for navigation
-    if (cmd) {
-      setCommandHistory(prev => [command, ...prev.slice(0, 49)]); // Keep last 50 commands
+    if (cmd && cmd !== '') {
+      setCommandHistory(prev => {
+        // Avoid duplicates by checking if the command is already at the top
+        if (prev[0] !== command) {
+          return [command, ...prev.slice(0, 49)]; // Keep last 50 commands
+        }
+        return prev;
+      });
       setHistoryIndex(-1);
     }
 

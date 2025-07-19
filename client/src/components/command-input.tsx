@@ -28,11 +28,22 @@ export function CommandInput({
       }
     };
 
+    const handleFocus = () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    };
+
     document.addEventListener('click', handleClick);
-    return () => document.removeEventListener('click', handleClick);
+    window.addEventListener('focus', handleFocus);
+    
+    return () => {
+      document.removeEventListener('click', handleClick);
+      window.removeEventListener('focus', handleFocus);
+    };
   }, []);
 
-  const quickCommands = ['about', 'projects', 'experience', 'connect'];
+  const quickCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'connect', 'help', 'clear'];
 
   return (
     <div className="terminal-gray border-t border-green-400 p-4">
@@ -53,12 +64,12 @@ export function CommandInput({
       {/* Mobile Command Buttons */}
       <div className="mt-3 sm:hidden">
         <div className="text-xs terminal-muted mb-2">Quick Commands:</div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {quickCommands.map((command) => (
             <button
               key={command}
               onClick={() => onExecuteCommand(command)}
-              className="terminal-gray border border-green-400 px-2 py-1 text-xs rounded hover:bg-green-400 hover:text-black transition-colors"
+              className="terminal-gray border border-green-400 px-2 py-1 text-xs rounded hover:bg-green-400 hover:text-black transition-colors min-w-0 flex-shrink-0"
             >
               {command}
             </button>
