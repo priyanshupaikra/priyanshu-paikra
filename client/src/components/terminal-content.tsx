@@ -122,10 +122,6 @@ export function TerminalContent({
                 <span className="text-gray-400">- Connect with me</span>
               </div>
               <div className="flex">
-                <span className="text-green-400 w-28">• connect</span>
-                <span className="text-gray-400">- Quick social links</span>
-              </div>
-              <div className="flex">
                 <span className="text-green-400 w-28">• help</span>
                 <span className="text-gray-400">- Show help menu</span>
               </div>
