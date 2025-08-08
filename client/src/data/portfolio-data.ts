@@ -18,10 +18,10 @@ tools and Ml models. I love clean code, elegant solutions, and continuous learni
 
 Core Skills:
 • Programming: Python, Java, C++, JavaScript
-• Python (Streamlit,l Flask, FastAPI, etc)
-• Database Design (MySQL, MongoDB)
-• DevOps (CLoud, AWS, CI/CD)
-• Data Science (Pandas, NumPy, Scikit-learn, etc)
+• Python (Streamlit, Flask, FastAPI )
+• Database Design (RDBMS, MySQL, NoSQL, PostgreSQL)
+• DevOps (GoogleCloud, LLM, CI/CD)
+• Python Libraries (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Keras, PySpark, Seaborn)
     `
   },
   education: {
@@ -80,11 +80,6 @@ Core Skills:
 💼 Python Developer Intern | Innobyte Services
    📅 July 2025 - Present
    📍 Remote
-   • Building a full stack web application to help users track income, expenses, and manage personal budgets. 
-   • Implemented secure user authentication and session management using Flask and SQLite. 
-   • Developed features to add, view, delete transactions and generate monthly/yearly financial reports. 
-   • Integrated CSV export functionality and category-wise budget limit enforcement with real-time warnings. 
-   • Designed a responsive, modern UI using Tailwind CSS for seamless use across devices. 
 
 
 💼 IBM Skill Build Internshhip | CSRBOX
