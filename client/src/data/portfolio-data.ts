@@ -111,7 +111,7 @@ Core Skills:
   certifications: {
     title: "CERTIFICATIONS",
     content: ` 
-🏅 Introduction to Statistics
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/Z6893D5S9V56?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Introduction to Statistics</a>
    Issued: 2024
 
 🏅 Introduction to Artificial Intelligence
@@ -144,10 +144,10 @@ Core Skills:
    • <a href="https://linkedin.com/in/priyanshupaikra" target="_blank" class="text-blue-400 hover:text-blue-300 underline">LinkedIn: linkedin.com/in/priyanshupaikra</a>
    
 🐦 Social Media:
-   • <a href="https://twitter.com/johndev_codes" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Twitter: @johndev_codes</a>
+   • <a href="https://twitter.com/priyanshupyr" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Twitter: @priyanshupyr</a>
    • <a href="https://medium.com/@priyanshupaikra" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Medium: medium.com/@priyanshupaikra</a>
 
-💬 Let's connect and discuss Python, web development,
+💬 Let's connect and discuss Python Development, web development with python and machine learning,
    or any interesting tech topics!
     `
   },
