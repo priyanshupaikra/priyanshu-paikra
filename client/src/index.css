@@ -204,6 +204,14 @@
   }
 }
 
+/* Desktop specific layout fixes */
+@media (min-width: 1024px) {
+  .terminal-right-side {
+    max-height: calc(100vh - 120px);
+    overflow: hidden;
+  }
+}
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   body {

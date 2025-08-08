@@ -142,9 +142,9 @@ export function TerminalContent({
         </div>
 
         {/* Right Side - Terminal Interaction Only */}
-        <div className="lg:w-3/5 lg:pl-6 flex flex-col min-h-0 terminal-right-side">
+        <div className="lg:w-3/5 lg:pl-6 flex flex-col terminal-right-side" style={{ height: 'calc(100vh - 100px)' }}>
           {/* Command History Display - Only executed commands and outputs */}
-          <div className="flex-1 overflow-y-auto mb-4 terminal-scroll" ref={terminalRef} style={{ maxHeight: 'calc(100vh - 250px)' }}>
+          <div className="flex-1 overflow-y-auto mb-4 terminal-scroll">
             {history.length === 0 && (
               <div className="text-center py-4 sm:py-8">
                 <p className="text-green-400 mb-2 text-sm sm:text-base">Terminal Ready</p>
@@ -167,8 +167,8 @@ export function TerminalContent({
             ))}
           </div>
 
-          {/* Command Input - Only on right side */}
-          <div className="border-t border-green-400 pt-2 sm:pt-4">
+          {/* Command Input - Fixed at bottom of right panel */}
+          <div className="flex-shrink-0 border-t border-green-400 pt-2 sm:pt-4 bg-[var(--terminal-bg)]">
             <div className="flex items-center">
               <span className="text-green-400 mr-1 sm:mr-2 text-xs sm:text-sm flex-shrink-0">user@priyanshu:~$</span>
               <input 
