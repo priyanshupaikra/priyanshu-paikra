@@ -16,7 +16,9 @@ export function useTerminal() {
 
   const scrollToBottom = useCallback(() => {
     if (terminalRef.current) {
-      terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+      setTimeout(() => {
+        terminalRef.current!.scrollTop = terminalRef.current!.scrollHeight;
+      }, 100);
     }
   }, []);
 

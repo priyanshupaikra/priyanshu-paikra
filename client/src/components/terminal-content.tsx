@@ -143,7 +143,7 @@ export function TerminalContent({
         {/* Right Side - Terminal Interaction Only */}
         <div className="lg:w-3/5 lg:pl-6 flex flex-col min-h-0 terminal-right-side">
           {/* Command History Display - Only executed commands and outputs */}
-          <div className="flex-1 overflow-y-auto mb-4" ref={terminalRef}>
+          <div className="flex-1 overflow-y-auto mb-4 terminal-scroll" ref={terminalRef} style={{ maxHeight: 'calc(100vh - 200px)' }}>
             {history.length === 0 && (
               <div className="text-center py-8">
                 <p className="text-green-400 mb-2">Terminal Ready</p>

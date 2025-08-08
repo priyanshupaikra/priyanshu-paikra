@@ -26,6 +26,9 @@ export default function Terminal() {
           onExecuteCommand={executeCommand}
         />
       </div>
+
+
+      
     </div>
   );
 }

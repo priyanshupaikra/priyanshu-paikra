@@ -7,161 +7,151 @@ export const portfolioData: Record<string, CommandData> = {
   about: {
     title: "ABOUT ME",
     content: `
-Name: John Developer
-Role: Full Stack Python Developer
-Location: San Francisco, CA
+Name: Priyanshu Paikra
+Role: Python Developer and AI/ML Student
+Location: Dwarka, Sector 16C, New Delhi, 110078
+Email: priyanshu.paikra@gmail.com
 
-I'm a passionate Python developer with 5+ years of experience
+I'm a passionate Python developer with 1.5+ years of experience
 building scalable web applications, data pipelines, and automation
-tools. I love clean code, elegant solutions, and continuous learning.
+tools and Ml models. I love clean code, elegant solutions, and continuous learning.
 
 Core Skills:
-• Python (Django, Flask, FastAPI)
-• JavaScript (React, Node.js)
-• Database Design (PostgreSQL, MongoDB)
-• DevOps (Docker, AWS, CI/CD)
-• Data Science (Pandas, NumPy, Scikit-learn)
+• Programming: Python, Java, C++, JavaScript
+• Python (Streamlit,l Flask, FastAPI, etc)
+• Database Design (MySQL, MongoDB)
+• DevOps (CLoud, AWS, CI/CD)
+• Data Science (Pandas, NumPy, Scikit-learn, etc)
     `
   },
   education: {
     title: "EDUCATION",
     content: `
-🎓 Master of Science in Computer Science
-   Stanford University (2018-2020)
-   Specialization: Machine Learning & AI
-   GPA: 3.8/4.0
+🎓 Bachelor of Technology in Information Technology
+   USICT, GGSIPU (2022-2026)
+   Specialization: Machine Learning, Data Science & AI
+   GPA: 8.6
 
-🎓 Bachelor of Science in Software Engineering  
-   UC Berkeley (2014-2018)
-   Magna Cum Laude
-   GPA: 3.9/4.0
+🎓 Senior Secondary Education 
+   CBSE (2019-2021)
+   94.6%
 
 📚 Relevant Coursework:
-   • Advanced Algorithms & Data Structures
+   • Algorithms & Data Structures
    • Machine Learning & Deep Learning
    • Database Systems & Design
-   • Software Architecture & Design Patterns
+   • Operating System
+   • Computer Networks
+   • Software Engineering
     `
   },
   projects: {
     title: "FEATURED PROJECTS",
     content: `
-🚀 AI-Powered Task Manager
-   ├── Tech: Python, Django, React, PostgreSQL
-   ├── Features: Smart task prioritization using ML
-   └── <a href="https://github.com/user/ai-task-manager" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/ai-task-manager</a>
+🚀 Personal Finance Tracker
+   ├── Tech: Python, Flask, SQLite, Tailwind CSS, HTML, Git
+   ├── Features: full-stack web application to help users track income, expenses, and manage personal budgets
+   └── <a href="https://github.com/priyanshupaikra/finance_tracker" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/ai-task-manager</a>
 
-📊 Real-time Analytics Dashboard
-   ├── Tech: Python, FastAPI, Redis, D3.js
-   ├── Features: Live data visualization & monitoring
-   └── <a href="https://github.com/user/analytics-dashboard" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/analytics-dashboard</a>
+📊 AI Resume Analyzer
+   ├── Tech: Python, Flask, HTML5, Google Gemini API, Tailwind CSS
+   ├── Features: AI-powered resume and job analyzer
+   └── <a href="https://github.com/priyanshupaikra/AI-resume-analyzer" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/analytics-dashboard</a>
 
-🤖 Slack Bot for Team Automation
-   ├── Tech: Python, Slack API, AWS Lambda
-   ├── Features: Automated workflows & notifications
-   └── <a href="https://github.com/user/slack-automation-bot" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/slack-automation-bot</a>
+🤖 Calories Burnt Prediction Model
+   ├── Tech: Python, Pandas, Scikit-learn, Flask, HTML5, Tailwind CSS
+   ├── Features: A web application that uses a machine learning model to predict calories burned based on inputs like exercise duration, type, age, and weight.
+   └── <a href="" target="_blank" class="text-blue-400 hover:text-blue-300 underline"></a>
 
-🌐 E-commerce Platform
-   ├── Tech: Django, React, Stripe API, Docker
-   ├── Features: Full-featured online store with payments
-   └── <a href="https://github.com/user/ecommerce-platform" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/user/ecommerce-platform</a>
+🌐 Bank Management System
+   ├── Tech: Python, Flask, React, MySQL, Stripe API, Docker
+   ├── Features: A web platform simulating a banking system with user accounts, balance viewing, fund transfers, and transaction history. The Stripe API is integrated for processing card deposits.
+   └── <a href="" target="_blank" class="text-blue-400 hover:text-blue-300 underline"></a>
+
+📊 Hostel Face Recognition System
+   ├── Tech: Python, OpenCV, face_recognition (library), Flask, HTML5
+   ├── Features: A system that uses computer vision for real-time face detection and recognition to automate and track student attendance in a hostel.
+   └── <a href="" target="_blank" class="text-blue-400 hover:text-blue-300 underline"></a>
     `
   },
   experience: {
     title: "WORK EXPERIENCE",
     content: `
-💼 Senior Python Developer | TechCorp Inc.
-   📅 2021 - Present
-   📍 San Francisco, CA
-   • Led team of 4 developers building microservices architecture
-   • Improved system performance by 40% through optimization
-   • Mentored junior developers and conducted code reviews
-
-💼 Full Stack Developer | StartupXYZ
-   📅 2019 - 2021  
+💼 Python Developer Intern | Innobyte Services
+   📅 July 2025 - Present
    📍 Remote
-   • Built MVP from scratch using Django and React
-   • Implemented CI/CD pipelines reducing deployment time by 60%
-   • Collaborated with product team on feature development
+   • Building a full stack web application to help users track income, expenses, and manage personal budgets. 
+   • Implemented secure user authentication and session management using Flask and SQLite. 
+   • Developed features to add, view, delete transactions and generate monthly/yearly financial reports. 
+   • Integrated CSV export functionality and category-wise budget limit enforcement with real-time warnings. 
+   • Designed a responsive, modern UI using Tailwind CSS for seamless use across devices. 
 
-💼 Python Developer Intern | BigTech Corp
-   📅 Summer 2018
-   📍 Mountain View, CA
-   • Developed internal automation tools saving 20+ hours/week
-   • Contributed to open-source Python libraries
-   • Participated in code review process and agile development
+
+💼 IBM Skill Build Internshhip | CSRBOX
+   📅 Aug 2024 - Sep 2024
+   📍 Remote
+   • Leveraged Python, SQL and Tableau to clean, analyze and visualize datasets.
+   • Developed predictive models using machine learning techniques to forecast trends and optimize processes of movie recognition. 
+   • Conducted in-depth exploratory data analysis to uncover hidden patterns and insights.
+   • Created interactive dashboards to effectively communicate findings to stakeholders.
+   • Gained hands on experience in data cleaning, visualization, and analysis, contributing to project success.
+
+
+💼 ML Research Intern | GGV
+   📅 Sep 2025 - Nov 2024
+   📍 Remort
+   • Worked on Calories Burnt Prediction using real-world datasets from the professor and Kaggle.
+   • Pre-processed data to ensure clean, structured input for model training.
+   • Selected Linear Regression and Random Forest as the best algorithms based on performance. Developed models with RMSE: 8.5 (Linear Regression) and 6.2 (Random Forest).
+   • Random Forest showed better accuracy due to its ability to handle non-linearity.
+   • Gained experience in data analysis, model evaluation, and refining machine learning algorithms.
+
     `
   },
   certifications: {
     title: "CERTIFICATIONS",
-    content: `
-🏅 AWS Certified Solutions Architect (Professional)
-   Issued: 2023 | Valid until: 2026
-   
-🏅 Google Cloud Professional Data Engineer
-   Issued: 2022 | Valid until: 2025
-   
-🏅 Certified Kubernetes Administrator (CKA)
-   Issued: 2022 | Valid until: 2025
-   
-🏅 MongoDB Certified Developer Associate
-   Issued: 2021 | Valid until: 2024
-   
-🏅 Django REST Framework Specialist
-   Issued: 2020 | Valid until: 2025
+    content: ` 
+🏅 Introduction to Statistics
+   Issued: 2024
+
+🏅 Introduction to Artificial Intelligence
+   Issued: 2024
+
+🏅 Gemini for Data Scientists and Analysts
+   Issued: 2024
+
+🏅 Data Analytics - IBM Internship
+   Issued: 2024
+
+🏅 Google Analytics for Beginners
+   Issued: 2024
+
+🏅 Calculus for Machine Learning and Data Science
+   Issued: 2024
+
+🏅 Data Analytics - IBM Internship
+   Issued: 2024
     `
   },
   social: {
     title: "CONNECT WITH ME",
     content: `
+   ┌─────────────────────────────────────────────────────────┐
+   │                    SOCIAL CONNECTIONS                   │
+   └─────────────────────────────────────────────────────────┘
 🔗 Professional Links:
-   • <a href="https://github.com/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/johndeveloper</a>
-   • <a href="https://linkedin.com/in/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">LinkedIn: linkedin.com/in/johndeveloper</a>
-   • <a href="https://johndeveloper.dev" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Portfolio: johndeveloper.dev</a>
-   • <a href="mailto:john@johndeveloper.dev" class="text-blue-400 hover:text-blue-300 underline">Email: john@johndeveloper.dev</a>
-
+   • <a href="https://github.com/priyanshupaikra" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GitHub: github.com/priyanshupaikra</a>
+   • <a href="https://linkedin.com/in/priyanshupaikra" target="_blank" class="text-blue-400 hover:text-blue-300 underline">LinkedIn: linkedin.com/in/priyanshupaikra</a>
+   
 🐦 Social Media:
    • <a href="https://twitter.com/johndev_codes" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Twitter: @johndev_codes</a>
-   • <a href="https://dev.to/johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Dev.to: dev.to/johndeveloper</a>
-   • <a href="https://medium.com/@johndeveloper" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Medium: medium.com/@johndeveloper</a>
+   • <a href="https://medium.com/@priyanshupaikra" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Medium: medium.com/@priyanshupaikra</a>
 
 💬 Let's connect and discuss Python, web development,
    or any interesting tech topics!
     `
   },
-  connect: {
-    title: "🌐 LET'S CONNECT!",
-    content: `
-┌─────────────────────────────────────────────────────────┐
-│                    SOCIAL CONNECTIONS                   │
-└─────────────────────────────────────────────────────────┘
-
-📧 <a href="mailto:john@johndeveloper.dev" class="text-green-400 hover:text-green-300 underline font-bold">john@johndeveloper.dev</a>
-   → Email me for collaborations and opportunities
-
-🐙 <a href="https://github.com/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">GitHub</a>
-   → Check out my code and contributions
-
-💼 <a href="https://linkedin.com/in/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">LinkedIn</a>
-   → Connect professionally and see my experience
-
-🐦 <a href="https://twitter.com/johndev_codes" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Twitter</a>
-   → Follow for tech updates and coding insights
-
-📝 <a href="https://dev.to/johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Dev.to</a>
-   → Read my technical articles and tutorials
-
-✍️ <a href="https://medium.com/@johndeveloper" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Medium</a>
-   → Deep dives into development topics
-
-🌐 <a href="https://johndeveloper.dev" target="_blank" class="text-green-400 hover:text-green-300 underline font-bold">Portfolio Website</a>
-   → View my complete portfolio and projects
-
-💬 Always open to discussing Python, web development,
-   AI/ML, and exciting tech opportunities!
-    `
-  },
-  help: {
+    help: {
     title: "AVAILABLE COMMANDS",
     content: `
 📖 Command Reference:
@@ -172,14 +162,9 @@ projects      - Featured projects and GitHub repositories
 experience    - Professional work history
 certifications- Industry certifications and credentials
 social        - Social media links and contact information
-connect       - Quick access to all social connections
 help          - Display this help menu
 clear         - Clear the terminal screen
 
-💡 Tips:
-• Use Tab for command completion
-• Use ↑/↓ arrows for command history
-• Commands are case-insensitive
     `
   }
 };
@@ -196,4 +181,4 @@ export const asciiArt = `
     =====================================
 `;
 
-export const availableCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'connect', 'help', 'clear'];
+export const availableCommands = ['about', 'education', 'projects', 'experience', 'certifications', 'social', 'help', 'clear'];
