@@ -114,22 +114,34 @@ Core Skills:
 🏅 <a href="https://www.coursera.org/account/accomplishments/verify/Z6893D5S9V56?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Introduction to Statistics</a>
    Issued: 2024
 
-🏅 Introduction to Artificial Intelligence
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/J0RMPFIQ858I?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Introduction to Retrieval Augmented Generation (RAG)</a>
    Issued: 2024
 
-🏅 Gemini for Data Scientists and Analysts
+🏅 <a href="https://www.linkedin.com/learning/certificates/7c7dbaeff47b67853e43c814c5a54cae77db9d74bfc3f1b95f68a153676248cd?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BaBdUZv7WRCSS7v5EzP8KSg%3D%3D" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Introduction to Artificial Intelligence</a>
    Issued: 2024
 
-🏅 Data Analytics - IBM Internship
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/QA9ZMWMUKVB4" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Gemini for Data Scientists and Analysts</a>
    Issued: 2024
 
-🏅 Google Analytics for Beginners
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/0VGUQQIADFD2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" target="_blank" class="text-blue-400 hover:text-blue-300 underline">GenAI Basics - How LLMs Work</a>
    Issued: 2024
 
-🏅 Calculus for Machine Learning and Data Science
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/Z6893D5S9V56?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Data Analytics - IBM Internship</a>
    Issued: 2024
 
-🏅 Data Analytics - IBM Internship
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/Z6893D5S9V56?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Google Analytics for Beginners</a>
+   Issued: 2024
+
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/HGQS22AGU0XZ" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Calculus for Machine Learning and Data Science</a>
+   Issued: 2024
+
+🏅 <a href="https://www.udacity.com/certificate/e/d60ddad0-5228-11ef-89fa-9fd59621171f" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Gemini API by Google</a>
+   Issued: 2024
+
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/7E6ME5EUQV9M?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Behavioral Finance</a>
+   Issued: 2024
+
+🏅 <a href="https://www.coursera.org/account/accomplishments/verify/VZ4GJXCR3AB9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Foundations of User Experience (UX) Design</a>
    Issued: 2024
     `
   },
