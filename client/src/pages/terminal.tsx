@@ -14,9 +14,9 @@ export default function Terminal() {
   } = useTerminal();
 
   return (
-    <div className="min-h-screen flex flex-col terminal-bg">
+    <div className="min-h-screen flex flex-col terminal-bg overflow-hidden">
       <TerminalHeader />
-      <div className="flex-1 flex flex-col lg:flex-row">
+      <div className="flex-1 flex flex-col lg:flex-row min-h-0">
         <TerminalContent 
           history={history}
           terminalRef={terminalRef}
@@ -26,9 +26,6 @@ export default function Terminal() {
           onExecuteCommand={executeCommand}
         />
       </div>
-
-
-      
     </div>
   );
 }
